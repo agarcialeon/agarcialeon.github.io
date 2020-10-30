@@ -13,9 +13,9 @@
     <!-- End of CSS References -->
   </head>
   <body>
-    <div class="container-fluid">
-    <div id="header" class="row">
-        <div class="col-xs-9">
+    <div class="d-flex flex-column justify-content-start align-items-stretch h-100">
+    <div id="header" class="d-flex flex-row justify-content-between pl-3 pr-3">
+        <div class="d-flex flex-column">
             <div class="row logo">
                 <div class="col-xs-2">
                     <img class="img-responsive" src="https://avatars0.githubusercontent.com/u/6717746?v=3&s=460">
@@ -25,37 +25,31 @@
                 </div>
             </div>
         </div>
-        <div class="col-xs-3">
-            <div class="menu">
-                <ul class="list-unstyled list-inline">
-                    <li>
-                        <a href="/about">
-                        About
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/blog">
-                        Blog
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/portfolio">
-                        Portfolio
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/contact">
-                        Contact
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <div class="d-flex flex-row flex-grow-1 menu">
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/blog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/portfolio">portfolio</a>
+              </li>
+            </ul>
         </div>
     </div>
-    <div id="content" class="row h-100">
+    <div id="content" class="d-flex flex-column justify-content-start align-items-stretch p-3 h-100">
         <h3 id="about">About Me</h3>
         <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non hendrerit nisl, nec condimentum quam. Vestibulum efficitur condimentum massa sit amet vestibulum. Nunc sed orci diam. Sed sed lorem ac metus vestibulum tempus ut sit amet sapien. Curabitur viverra faucibus neque. Ut risus felis, bibendum quis risus nec, congue efficitur mi. Vivamus vulputate ipsum mauris, a sagittis nunc varius sed.
+          I am a 28 year old developer from Logroño (La Rioja). I am currently working on the SmartCity platform for the city of Logroño as a full-stack developer.
+        </p>
+        <h4>Interests</h4>
+        <p>
+          In my free time I read books from various fields (although mostly technical), play with open-source software and I also like to play sports such as tennis, paddle and soccer.               
         </p>
         <p>
         Nullam ultrices ex vulputate leo fermentum volutpat. Morbi sed felis pellentesque, porttitor magna ut, tempus justo. Nulla ut ullamcorper arcu. Donec sed volutpat diam, ac faucibus massa. Nam ac turpis quis felis lacinia elementum. Donec rutrum feugiat tincidunt. Nam at euismod purus, tincidunt eleifend ex. Sed tortor magna, mollis ut faucibus eget, eleifend quis nulla. Nulla facilisi. Quisque id nisl in lectus auctor aliquam. Proin maximus eros eu pellentesque varius. Ut congue sem in condimentum venenatis. Ut aliquet congue auctor. Vivamus dignissim velit enim, faucibus tristique magna faucibus vitae.
@@ -70,8 +64,8 @@
         </div>
     </div>
         
-    <div id="footer" class="row">
-        <div class="col-xs-4">
+    <div id="footer" class="d-flex flex-row justify-content-around align-items-center">
+        <div class="d-flex flex-column justify-content-start align-items-stretch">
         <ul class="list-unstyled info">
             <li>
             <a href="/about">About</a>
@@ -83,7 +77,7 @@
             </li>
         </ul>
         </div>
-        <div class="col-xs-4">
+        <div class="d-flex flex-column justify-content-start align-items-stretch">
         <ul class="list-unstyled info">
             <li>
             <a href="/blog">Blog</a>
@@ -96,7 +90,7 @@
             </li>
         </ul>
         </div>
-        <div class="col-xs-4">
+        <div class="d-flex flex-column justify-content-start align-items-stretch">
         <ul class="list-unstyled list-inline social">
             <li>
             <a href="https://www.linkedin.com/in/algarleon/">
@@ -116,7 +110,7 @@
         </ul>
         </div>
     </div>
-    <div class="row copyright">
+    <div class="d-flex flex-row justify-content-center align-items-center copyright">
         <div class="col-xs-12">
         <p class="text-center">Álvaro García León © 2020. All Rights Reserved</p>
         </div>

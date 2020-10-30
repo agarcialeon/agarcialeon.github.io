@@ -7,22 +7,15 @@
     <!-- CSS References -->
     <link href='//fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
     <link href='./augmented.css' rel='stylesheet' type='text/css'>
-    <!-- End of JS References -->
-
-    <!-- JS References -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src='./augmented.js'></script>
-    <!--<script src='//cdn.sobekrepository.org/includes/jquery-rotate/2.2/jquery-rotate.js'></script>-->
-    <!-- End of JS References -->
+    <!-- End of CSS References -->
   </head>
   <body>
-    <div class="container-fluid">
-    <div id="header" class="row">
-        <div class="col-xs-9">
+    <div class="d-flex flex-column justify-content-start align-items-stretch h-100">
+    <div id="header" class="d-flex flex-row justify-content-between pl-3 pr-3">
+        <div class="d-flex flex-column">
             <div class="row logo">
                 <div class="col-xs-2">
                     <img class="img-responsive" src="https://avatars0.githubusercontent.com/u/6717746?v=3&s=460">
@@ -32,35 +25,25 @@
                 </div>
             </div>
         </div>
-        <div class="col-xs-3">
-            <div class="menu">
-                <ul class="list-unstyled list-inline">
-                    <li>
-                        <a href="/about">
-                        About
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/blog">
-                        Blog
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/portfolio">
-                        Portfolio
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/contact">
-                        Contact
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <div class="d-flex flex-row justify-content-end flex-grow-1 menu">
+            <ul class="nav justify-content-end">
+              <li class="nav-item ml-3">
+                <a class="nav-link p-2 active" href="#">Home</a>
+              </li>
+              <li class="nav-item ml-3">
+                <a class="nav-link p-2" href="/about">About</a>
+              </li>
+              <li class="nav-item ml-3">
+                <a class="nav-link p-2" href="/blog">Blog</a>
+              </li>
+              <li class="nav-item ml-3">
+                <a class="nav-link p-2" href="/portfolio">portfolio</a>
+              </li>
+            </ul>
         </div>
     </div>
-    <div id="content" class="row">
-        <h3 id="portfolio">Projects</h3>
+    <div id="content" class="d-flex flex-column justify-content-start align-items-stretch p-3 h-100">
+       <h3 id="portfolio">Projects</h3>
         <div class="row projects">
             <div class="card" style="width: 18rem;">
               <img class="card-img-top" src=".../100px180/" alt="Card image cap">
@@ -127,13 +110,146 @@
             </div>
           </div>
       
-      <h3 id="portfolio">Curriculum</h3>
+        <h3 id="portfolio">Curriculum</h3>
         <div class="row curriculum">
             <p>
                 <i class="fa fa-info-circle" aria-hidden="true"></i>
                 This section is under construction. Updates are incoming... 
             </p>
         </div>
+    </div>
+        
+    <div id="footer" class="d-flex flex-row justify-content-around align-items-center">
+        <div class="d-flex flex-column justify-content-start align-items-stretch">
+        <ul class="list-unstyled info">
+            <li>
+            <a href="/about">About</a>
+            </li>
+            <li>
+            <a href="/contact">Contact me</a></li>
+            <li>
+            <a href="/">Portfolio</a
+            </li>
+        </ul>
+        </div>
+        <div class="d-flex flex-column justify-content-start align-items-stretch">
+        <ul class="list-unstyled info">
+            <li>
+            <a href="/blog">Blog</a>
+            </li>
+            <li>
+            <a href="#">RSS</a>
+            </li>
+            <li>
+            <a href="#">What I do</a>
+            </li>
+        </ul>
+        </div>
+        <div class="d-flex flex-column justify-content-start align-items-stretch">
+        <ul class="list-unstyled list-inline social">
+            <li>
+            <a href="https://www.linkedin.com/in/algarleon/">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </a>
+            </li>
+            <li>
+            <a href="http://codepen.io/algarle/">
+                <i class="fa fa-codepen" aria-hidden="true"></i>
+            </a>
+            </li>
+            <li>
+            <a href="https://github.com/agarcialeon">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    <div class="d-flex flex-row justify-content-center align-items-center copyright">
+        <div class="col-xs-12">
+        <p class="text-center">Álvaro García León © 2020. All Rights Reserved</p>
+        </div>
+    </div>
+    </div>
+      
+    <!-- JS References -->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src='./augmented.js'></script>
+    <!-- End of JS References -->
+ 
+  </body>
+ </html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+
+    <!-- CSS References -->
+    <link href='//fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <link href='./augmented.css' rel='stylesheet' type='text/css'>
+    <!-- End of JS References -->
+
+    <!-- JS References -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src='./augmented.js'></script>
+    <!--<script src='//cdn.sobekrepository.org/includes/jquery-rotate/2.2/jquery-rotate.js'></script>-->
+    <!-- End of JS References -->
+  </head>
+  <body>
+    <div class="container-fluid">
+    <div id="header" class="row">
+        <div class="col-xs-9">
+            <div class="row logo">
+                <div class="col-xs-2">
+                    <img class="img-responsive" src="https://avatars0.githubusercontent.com/u/6717746?v=3&s=460">
+                </div>
+                <div class="col-xs-10">
+                    <h3 class="logo-title">Álvaro García León</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-3">
+            <div class="menu">
+                <ul class="list-unstyled list-inline">
+                    <li>
+                        <a href="/about">
+                        About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/blog">
+                        Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/portfolio">
+                        Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/contact">
+                        Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="content" class="row">
+        
     </div>
     <div id="footer" class="row">
         <div class="col-xs-4">
